@@ -130,8 +130,7 @@ export default function Chat() {
           </Button>
         </div>
         <span className="mx-auto mb-6 text-xs mt-3 text-center">
-          ChatGPT may produce inaccurate information about people, places, or
-          facts.
+         ChatGPT 可能会产生有关人物、地点或事实的不准确信息。
         </span>
       </div>
     </div>
