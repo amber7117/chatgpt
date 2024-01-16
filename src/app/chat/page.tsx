@@ -41,7 +41,7 @@ export default function Chat() {
       .catch((err) => {
         if (err instanceof AxiosError)
           toast({
-            title: "Error",
+            title: "请先添加ChatGPT API 左上角 Menu",
             description: err.response?.data.message,
           });
       })
