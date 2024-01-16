@@ -48,14 +48,14 @@ export default function Login() {
       <span className="mt-12">{Logo}</span>
       <Card className="w-[380px] py-5 mt-48 max-[900px]:mt-10 max-[400px]:w-[95%]">
         <CardHeader>
-          <CardTitle>Welcome back</CardTitle>
+          <CardTitle>欢迎回来</CardTitle>
           <CardDescription>Login to your account.</CardDescription>
         </CardHeader>
         <CardContent>
           <form>
             <div className="grid w-full items-center gap-4 mt-1">
               <div className="flex flex-col gap-3  space-y-1.5">
-                <Label htmlFor="email">Email or username</Label>
+                <Label htmlFor="email">邮箱或者用户名</Label>
                 <Input
                   required
                   value={inputs.input}
@@ -67,7 +67,7 @@ export default function Login() {
                 />
               </div>
               <div className="flex flex-col gap-3 mt-2 space-y-1.5">
-                <Label htmlFor="password">Password</Label>
+                <Label htmlFor="password">密码</Label>
                 <Input
                   value={inputs.password}
                   onChange={(e) =>
@@ -93,9 +93,9 @@ export default function Login() {
         </CardFooter>
       </Card>
       <span className="mt-6 text-sm">
-        Dont have an account?{" "}
+        还没有账户?{" "}
         <Link className="text-neutral-400" href="/auth/signup">
-          Sign up
+          立即注册
         </Link>{" "}
       </span>
     </div>
