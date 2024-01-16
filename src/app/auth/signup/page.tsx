@@ -95,7 +95,7 @@ export default function Signup() {
               </div>
               <div className="flex flex-col gap-3  space-y-1.5">
                 <Label htmlFor="api">API key
-                  <span className="text-neutral-400">(请到 https://reurl.cc/bD9d1o 购买 )</span>
+                  <span className="text-neutral-400">(请到 https://ssu8.taobao.com/ 购买 )</span>
                 </Label>
                 <Input
                   value={inputs.apiKey}
