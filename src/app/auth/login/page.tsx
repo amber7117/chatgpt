@@ -49,7 +49,7 @@ export default function Login() {
       <Card className="w-[380px] py-5 mt-48 max-[900px]:mt-10 max-[400px]:w-[95%]">
         <CardHeader>
           <CardTitle>欢迎回来</CardTitle>
-          <CardDescription>Login to your account.</CardDescription>
+          <CardDescription>登录您的帐户</CardDescription>
         </CardHeader>
         <CardContent>
           <form>
