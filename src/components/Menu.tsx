@@ -135,7 +135,7 @@ export default function Menu({ clear }: { clear: () => void }) {
             variant="default"
           >
             <MenuIcon className="w-5 h-5" />{" "}
-            <span className="ml-2 hidden sm:flex">Menu</span>
+            <span className="ml-2 hidden sm:flex">目录</span>
           </Button>
         </SheetTrigger>
         <SheetContent side="left" className="dark:border-slate-800 z-[9999]">
@@ -146,14 +146,14 @@ export default function Menu({ clear }: { clear: () => void }) {
                 onClick={() => setOpen(true)}
               >
                 <User className="mr-2 h-5 w-5" />
-                <span>Edit profile</span>
+                <span>编辑账户</span>
               </div>
               <div
                 className="flex flex-row items-center gap-2 hover:bg-gray-800 dark:hover:text-inherit hover:text-white py-3 px-3 rounded-lg cursor-pointer"
                 onClick={handleClear}
               >
                 <XCircle className="mr-2 h-5 w-5" />
-                <span>Clear conversation</span>
+                <span>清空聊天记录</span>
               </div>
               <div className="flex flex-row items-center gap-2 hover:bg-gray-800 dark:hover:text-inherit hover:text-white py-3 px-3 rounded-lg cursor-pointer">
                 {mode === "dark" ? (
@@ -181,7 +181,7 @@ export default function Menu({ clear }: { clear: () => void }) {
                 onClick={handleLogout}
               >
                 <LogOut className="mr-2 h-5 w-5" />
-                <span>Log out</span>
+                <span>退出</span>
               </div>
             </div>
           </SheetHeader>
@@ -191,15 +191,15 @@ export default function Menu({ clear }: { clear: () => void }) {
       <Dialog open={open} onOpenChange={(val) => setOpen(val)}>
         <DialogContent className="sm:max-w-[495px]">
           <DialogHeader>
-            <DialogTitle>Edit profile</DialogTitle>
+            <DialogTitle>添加ChatGPT API</DialogTitle>
             <DialogDescription>
-              Make changes to your profile here. Click save when youre done.
+              在此处更改您的个人资料。 完成后单击“保存”。
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
             <div className="grid grid-cols-4 items-center gap-4">
               <Label htmlFor="username" className="text-right">
-                Username
+                用户名
               </Label>
               <Input
                 id="username"
@@ -212,7 +212,7 @@ export default function Menu({ clear }: { clear: () => void }) {
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
               <Label htmlFor="avatar" className="text-right">
-                Avatar URL
+                头像 URL
               </Label>
               <Input
                 id="avatar"
@@ -243,7 +243,7 @@ export default function Menu({ clear }: { clear: () => void }) {
               disabled={!edit.apiKey && !edit.avatar && !edit.username}
               type="submit"
             >
-              Save changes
+              保存
             </Button>
           </DialogFooter>
         </DialogContent>
