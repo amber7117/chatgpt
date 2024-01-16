@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
+  url      = "mongodb+srv://vercel-admin-user-65a614912a529828bb65cec0:sjuAaNErCkfcyBUQ@chatgpt.df8ut4x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }
 
 model Token {
