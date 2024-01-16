@@ -155,14 +155,6 @@ export default function Menu({ clear }: { clear: () => void }) {
                 <XCircle className="mr-2 h-5 w-5" />
                 <span>Clear conversation</span>
               </div>
-              <Link
-                href="https://github.com/nisabmohd/ChatGPT"
-                target="_blank"
-                className="flex flex-row items-center gap-2 hover:bg-gray-800 dark:hover:text-inherit hover:text-white py-3 px-3 rounded-lg"
-              >
-                <Github className="mr-2 h-5 w-5" />
-                <span>GitHub</span>
-              </Link>
               <div className="flex flex-row items-center gap-2 hover:bg-gray-800 dark:hover:text-inherit hover:text-white py-3 px-3 rounded-lg cursor-pointer">
                 {mode === "dark" ? (
                   <div
@@ -184,14 +176,6 @@ export default function Menu({ clear }: { clear: () => void }) {
                   </div>
                 )}
               </div>
-              <Link
-                href="https://platform.openai.com/docs/"
-                target="_blank"
-                className="flex flex-row items-center gap-2 hover:bg-gray-800 dark:hover:text-inherit hover:text-white py-3 px-3 rounded-lg cursor-pointer"
-              >
-                <Cloud className="mr-2 h-5 w-5" />
-                <span>API</span>
-              </Link>
               <div
                 className="flex flex-row items-center gap-2 hover:bg-gray-800 dark:hover:text-inherit hover:text-white py-3 px-3 rounded-lg cursor-pointer"
                 onClick={handleLogout}
@@ -241,7 +225,7 @@ export default function Menu({ clear }: { clear: () => void }) {
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
               <Label htmlFor="api" className="text-right">
-                API Key
+                ChatGPT API Key
               </Label>
               <Input
                 id="api"
