@@ -40,7 +40,7 @@ export default function Signup() {
       .catch((err) => {
         if (err instanceof AxiosError)
           toast({
-            title: "Signup unsuccessful",
+            title: "注册失败",
             description: err.response?.data.message,
           });
       });
@@ -51,14 +51,14 @@ export default function Signup() {
       <span className="mt-12">{Logo}</span>
       <Card className="w-[380px] py-5 mt-20 max-[900px]:mt-10 max-[400px]:w-[95%]">
         <CardHeader>
-          <CardTitle>New to ChatGPT</CardTitle>
+          <CardTitle>ChatGPT 新手</CardTitle>
           <CardDescription>Create your account.</CardDescription>
         </CardHeader>
         <CardContent>
           <form>
             <div className="grid w-full items-center gap-4 mt-1">
               <div className="flex flex-col gap-3  space-y-1.5">
-                <Label htmlFor="email">Email </Label>
+                <Label htmlFor="email">邮箱 </Label>
                 <Input
                   value={inputs.email}
                   onChange={(e) =>
@@ -69,7 +69,7 @@ export default function Signup() {
                 />
               </div>
               <div className="flex flex-col gap-3  space-y-1.5">
-                <Label htmlFor="username">Username</Label>
+                <Label htmlFor="username">用户名</Label>
                 <Input
                   value={inputs.username}
                   onChange={(e) =>
@@ -82,7 +82,7 @@ export default function Signup() {
               <div className="flex flex-col gap-3  space-y-1.5">
                 <Label htmlFor="avatar">
                   Avatar URL
-                  <span className="text-neutral-400">(optional)</span>
+                  <span className="text-neutral-400">(自选)</span>
                 </Label>
                 <Input
                   value={inputs.avatar}
@@ -105,7 +105,7 @@ export default function Signup() {
                 />
               </div>
               <div className="flex flex-col gap-3 mt-2 space-y-1.5">
-                <Label htmlFor="password">Password</Label>
+                <Label htmlFor="password">密码</Label>
                 <Input
                   value={inputs.password}
                   onChange={(e) =>
@@ -130,14 +130,14 @@ export default function Signup() {
             variant="custom"
             className="w-full"
           >
-            Signup
+            立即注册
           </Button>
         </CardFooter>
       </Card>
       <span className="mt-6 text-sm max-[400px]:pb-4">
-        Already have an account?{" "}
+        已有账户?{" "}
         <Link className="text-neutral-400" href="/auth/login">
-          Log in
+          登录
         </Link>{" "}
       </span>
     </div>
