@@ -21,7 +21,7 @@ export default function CurrentModel({}: Props) {
 
   return (
     <div className="p-1 text-primary">
-      <h3 className="text-sm font-medium">CURRENT MODEL</h3>
+      <h3 className="text-sm font-medium">当前型号</h3>
       <Dropdown
         options={
           loadingModels

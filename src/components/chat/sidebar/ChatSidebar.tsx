@@ -22,7 +22,7 @@ export default function ChatSidebar({}: Props) {
           className="flex items-center gap-3 rounded border border-white/20 p-4 transition-colors hover:bg-gray-500/10"
         >
           <MdAdd />
-          New chat
+          开始新的聊天
         </Link>
 
         <Conversations />
@@ -37,15 +37,14 @@ export default function ChatSidebar({}: Props) {
             href="/playground"
           >
             <MdBuild />
-            Playground
+            测试场景
           </Link>
           <ButtonContainer onClick={clearConversations}>
             <MdDeleteOutline />
-            Clear Conversations
+            清空聊天记录
           </ButtonContainer>
 
-          <ThemeButton />
-        </div>
+          </div>
       </div>
     </div>
   );
